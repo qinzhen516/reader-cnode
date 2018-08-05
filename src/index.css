@@ -24,7 +24,7 @@ a{
   font-weight: bolder;
   font-size: 20px;
 }
-.change_page span{
+.page span{
   display: inline-block;
   background-color: chocolate;
   margin: 5px 10px; 

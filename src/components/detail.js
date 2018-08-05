@@ -38,6 +38,7 @@ class Detail extends Component {
       
         return(
             <div>
+                <button onClick={this.handleBack.bind(this)}>返回首页</button>
                 <p className="title">{this.state.data.title}</p>
                  <div className="detail">
               
@@ -49,6 +50,10 @@ class Detail extends Component {
               
             
         )
+    }
+    handleBack(e){
+        e.preventDefault();
+        window.history.back();
     }
 }
 
