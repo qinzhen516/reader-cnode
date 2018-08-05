@@ -1,0 +1,11 @@
+
+.App{
+  background-color:#e1e1e1;
+  height: auto;
+  width: 100%;
+}
+.list{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
