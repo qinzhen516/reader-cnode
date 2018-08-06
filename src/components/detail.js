@@ -22,7 +22,7 @@ class Detail extends Component {
                 data : res.data
               })
   
-               console.log(this.state.data);
+               //console.log(this.state.data);
         })   
        
 
