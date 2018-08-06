@@ -9,10 +9,9 @@ class Detail extends Component {
         }
     }
     componentDidMount(){
-        let url = window.location.href.split("/"),
-            id = url[url.length - 1];
-        // let newUrl = `https://cnodejs.org/api/v1/topic/${id}`
-        // console.log(newUrl);
+       
+        let id = this.props.match.params.id;
+           // console.log(id);
         fetch(`https://cnodejs.org/api/v1/topic/${id}`)
         .then((res) => {
               return res.json()
@@ -30,11 +29,7 @@ class Detail extends Component {
 
     render(){
         
-     // console.log(this.state.data.content);
-     
-      if(this.state.data.content){
-        document.querySelector(".detail").innerHTML = this.state.data.content ;
-      }
+    
       
         return(
             <div>
@@ -42,7 +37,7 @@ class Detail extends Component {
                 <p className="title">{this.state.data.title}</p>
                  <div className="detail">
               
-               {/* <pre dangerouslySetInnerHTML={{ __html: JSON.stringify(this.state.data.content, null, 2) }} /> */}
+               <div dangerouslySetInnerHTML={{ __html:this.state.data.content}} ></div>
                {/* <pre>{this.state.data.content}</pre> */}
 
            </div>

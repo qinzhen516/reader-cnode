@@ -18,7 +18,7 @@ class App extends Component {
        
        <Switch> 
           <Route path="/list" component={List}></Route>
-          <Route path="/detail" component={Detail}></Route>
+          <Route path="/detail/:id" component={Detail}></Route>
           <Redirect exact path="/" to="/list" />
         </Switch>
 
