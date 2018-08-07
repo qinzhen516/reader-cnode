@@ -20,13 +20,67 @@ a{
   background-color: #ffffff;
   padding: 10px 100px;
 }
+.goback{
+  border: none;
+  border: 1px solid green;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  position: fixed;
+  top: 65px;
+}
 .title{
   font-weight: bolder;
   font-size: 20px;
+  padding-left:107px; 
 }
 .page span{
   display: inline-block;
   background-color: chocolate;
   margin: 5px 10px; 
   cursor: pointer;
+}
+.filter-item{
+  float: left;
+  padding: 0 20px;
+  border: 1px solid palevioletred;
+ 
+  cursor: pointer;
+  
+}
+.type{
+ width: 100%;
+ position: absolute;
+ left: 20%;
+ top: 63px;
+}
+.type .active{
+  background-color:palevioletred; 
+}
+
+.replies{
+  background-color:#fff;
+}
+.replies .rep{
+  padding-left:30px; 
+  margin: 10px 0;
+  border-top: 2px solid peru;
+}
+.rep .rep_name{
+  color: darkolivegreen;
+  font-weight: bold;
+  
+}
+.rep p{
+  margin: 0;
+  padding: 0;
+}
+.rep .time{
+  float: right;
+  color:gray;
+}
+.replies .title{
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 10px;
 }

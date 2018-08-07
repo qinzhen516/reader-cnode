@@ -1,0 +1,1 @@
+export const TYPE = 'ask|share|job|good'.split('|');

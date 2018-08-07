@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route,Switch ,Redirect} from "react-router-dom";
+import { HashRouter as Router, Route,Switch,Redirect } from "react-router-dom";
 import './App.css';
 import Head from './head.png';
 import List from './components/list';
@@ -17,8 +17,9 @@ class App extends Component {
         </div>
        
        <Switch> 
-          <Route path="/list" component={List}></Route>
-          <Route path="/detail/:id" component={Detail}></Route>
+          <Route exact path="/list/:type/:current/:pageSize*" component={List} />
+          <Redirect from="/list" to="/list/all/1" />
+          <Route path="/detail/:current/:id" component={Detail} />
           <Redirect exact path="/" to="/list" />
         </Switch>
 
