@@ -1,1 +1,1 @@
-export const TYPE = 'ask|share|job|good'.split('|');
+export const TYPE = 'all|ask|share|job|good|dev'.split('|');

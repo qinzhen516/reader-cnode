@@ -36,27 +36,32 @@ a{
 }
 .page span{
   display: inline-block;
-  background-color: chocolate;
+  background-color:rgb(19, 143, 19);
   margin: 5px 10px; 
   cursor: pointer;
+  padding: 5px;
+  border-radius: 12px;
 }
 .filter-item{
   float: left;
-  padding: 0 20px;
-  border: 1px solid palevioletred;
- 
+  padding: 5px 25px;
+  /* border: 1px solid palevioletred; */
+  border-radius: 20px;
   cursor: pointer;
   
 }
 .type{
  width: 100%;
  position: absolute;
- left: 20%;
- top: 63px;
+ left: 15%;
+ top: 50px;
+ 
 }
 .type .active{
-  background-color:palevioletred; 
+  background-color:rgb(19, 143, 19); 
+  opacity: 0.7;
 }
+
 
 .replies{
   background-color:#fff;
